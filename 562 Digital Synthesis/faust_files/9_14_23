@@ -1,0 +1,17 @@
+import("stdfaust.lib");
+
+// phase delay
+gain = 0.5;
+sr = 44100;
+freq = 440;
+
+period_in_seconds = 1 / freq;
+half_period_in_seconds = period_in_seconds * 0.5;
+
+samples_in_half_period = half_period_in_seconds * sr;
+samples_to_delay = hslider("samples_to_delay", samples_in_half_period, samples_in_half_period * 0.1, samples_in_half_period * 2, 1);
+
+osc1 = os.osc(freq);
+osc2 = os.osc(freq) : @(samples_to_delay);
+
+process = (osc1 + osc2) * gain <: _,_ ;
