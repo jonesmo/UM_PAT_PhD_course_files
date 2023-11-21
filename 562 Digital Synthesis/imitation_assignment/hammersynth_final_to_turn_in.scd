@@ -54,13 +54,15 @@ SynthDef("fm1", { arg bus = 0, freq = 440, gain = 1.0, carPartial = 1, modPartia
 
     car = (Pulse.ar((freq * carPartial * bend.midiratio) + mod, 0.55, 0.5)
 		+ Pulse.ar((freq * carPartial * bend.midiratio * 0.25) + mod, 0.55, 0.5)
-		+ Pulse.ar((freq * carPartial * bend.midiratio * 0.125) + mod, 0.55, 0.25)
+		+ Pulse.ar((freq * carPartial * bend.midiratio * 0.13) + mod, 0.55, 0.25)
 		+ Pulse.ar((freq * carPartial * bend.midiratio * 2) + mod, 0.55, 0.1)
-		+ LFTri.ar((freq * carPartial * bend.midiratio * 4) + mod, 0.5, 0.25)
+		+ Saw.ar((freq * carPartial * bend.midiratio * 2) + mod, 0.5, 0.25)
+		+ Saw.ar((freq * carPartial * bend.midiratio * 4) + mod, 0.5, 0.25)
 	)!2;
 
-	env = EnvGen.kr(Env.adsr(0.01, 0.01, 0.95, 0.01), gate, doneAction:2);
-	sig = LPF.ar(car, 14000) * env * gain;
+	env = EnvGen.kr(Env.adsr(0.001, 0.02, 0.95, 0.01), gate, doneAction:2);
+	// sig = LPF.ar(car, 14000) * env * gain;
+	sig = BRF.ar(car, 500, 0.1) * env * gain;
 	// sig = car * env * gain;
 
     Out.ar(
