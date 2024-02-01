@@ -45,7 +45,24 @@ function grad_loss_1layer(
         b::AbstractVector
     )
     
-    # TODO: complete this function
+    n, d = size(W)
+    N = size(y, 2) # assume y is matrix of size n x N
+    
+    dW = zeros(n, d) 
+    db = zeros(n)
+    loss = 0.0
+
+    for k in 1:N
+        for p in 1:n
+            error = y[p, k] - f_a(W[p, :]' * x[:, k] + b[p])
+            common_term = error * df_a(W[p, :]' * x[:, k] + b[p])
+            for q in 1:d
+                dW[p, q] = dW[p, q] - 2 / N * common_term * x[q, k]
+            end
+            db[p] = db[p] - 2 / N * common_term
+            loss += 1 / N * error^2
+        end
+    end
     
     return dW, db, loss
 end

@@ -5,4 +5,6 @@
 \margl1440\margr1440\vieww11520\viewh8400\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 When training a NN, we\'92re choosing an activation function and optimizing the learning rate, # of steps, and batch_size in addition to the network structure.  Are there any best-practices ways to go about this optimization? It seems scientific to methodically change one of them at a time, but with the resource cost of each round of training, that might not always be practical.}
+\f0\fs24 \cf0 When training a NN, we\'92re choosing an activation function and optimizing the learning rate, # of steps, and batch_size in addition to the network structure.  Are there any best-practices ways to go about this optimization? It seems scientific to methodically change one of them at a time, but with the resource cost of each round of training, that might not always be practical.\
+\
+To achieve the same loss, you could use SGD with, say, 2000 training steps, or ASGD with, say, 1000 training steps.  If those are equivalent in terms of time and computational intensity, is there a reason to ever choose SGD over ASGD?}
