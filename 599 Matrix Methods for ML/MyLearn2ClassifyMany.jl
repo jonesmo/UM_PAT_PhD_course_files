@@ -165,27 +165,34 @@ function learn2classify_asgd_1layer(
     lambda_k = 0
     q_k = W
     p_k = b
-    for i in 1:iters
-        batch_idx = randperm(N)
-        batch_idx = batch_idx[1:min(batch_size, N)]
-        
-        dW, db, loss_i = grad_loss(f_a, df_a, X[:, batch_idx], y[:, batch_idx], W, b)
-        
-        q_kp1 = W - mu * dW
-        p_kp1 = b - mu * db
+    try
+        for i in 1:iters
+            println("step ", i)
+            batch_idx = randperm(N)
+            batch_idx = batch_idx[1:min(batch_size, N)]
+            
+            dW, db, loss_i = grad_loss(f_a, df_a, X[:, batch_idx], y[:, batch_idx], W, b)
+            
+            q_kp1 = W - mu * dW
+            p_kp1 = b - mu * db
 
-        lambda_kp1 = (1 + sqrt(1 + 4 * lambda_k^2)) / 2
-        gamma_k = (1 - lambda_k) / lambda_kp1
+            lambda_kp1 = (1 + sqrt(1 + 4 * lambda_k^2)) / 2
+            gamma_k = (1 - lambda_k) / lambda_kp1
 
-        W = (1 - gamma_k) * q_kp1 + gamma_k * q_k
-        b = (1 - gamma_k) * p_kp1 + gamma_k * p_k
+            W = (1 - gamma_k) * q_kp1 + gamma_k * q_k
+            b = (1 - gamma_k) * p_kp1 + gamma_k * p_k
 
-        q_k = q_kp1
-        p_k = p_kp1
-        lambda_k = lambda_kp1
+            q_k = q_kp1
+            p_k = p_kp1
+            lambda_k = lambda_kp1
 
-        loss[i] = loss_i
+            loss[i] = loss_i
+        end
+    catch e
+        println("Error: ", e)
+        throw(ErrorException(e))
     end
+    
     return W, b, loss
 end
 

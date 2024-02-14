@@ -6,3 +6,5 @@
 *.zip
 *.als
 *.mp4
+*.env
+*.vscode/
