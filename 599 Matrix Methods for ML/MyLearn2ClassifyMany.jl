@@ -167,7 +167,6 @@ function learn2classify_asgd_1layer(
     p_k = b
     try
         for i in 1:iters
-            println("step ", i)
             batch_idx = randperm(N)
             batch_idx = batch_idx[1:min(batch_size, N)]
             
