@@ -8,3 +8,5 @@
 *.mp4
 *.env
 *.vscode/
+*.aif
+*.asd
