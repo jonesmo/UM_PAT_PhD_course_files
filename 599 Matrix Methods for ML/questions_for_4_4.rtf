@@ -5,12 +5,28 @@
 \margl1440\margr1440\vieww11520\viewh8400\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 What\'92s the difference between correlation and convolution?\
+\f0\fs24 \cf0 Could we talk about padding and strided convolutions?  Is there a guide for when it\'92s useful to use them vs. not?  For an image, is that when important features of the image exist around the edge?  For audio, would that mean when important features exist at the beginning and ending of the audio file?\
 \
-Is there a recommended method for choosing the size of conv kernels and the number of output channels for a given conv layer? \
+What\'92s the difference between correlation and convolution?\
+\
+Is there a recommended method for choosing the size of conv kernels and the number of output channels for a given conv layer?  Like, for data that\'92s 88020 dimensions by two channels, what kind of conv sizes make sense?\
 \
 Is there any reason to implement dense layers between conv layers?\
 \
 If CNNs are good at temporal data, why do people say RNNs are good at time series data?\
 \
-Why do we use the word kernel for filters?}
+Why do we use the word kernel for filters?\
+\
+-------------------------\
+free write on how RNNs could be used for music\
+\
+RNN is for sequence-to-sequence function mapping\
+is RNN good enough? do I need a transformer or LSTM?\
+\
+graphviz for markov chain drawing\
+\
+put this generative task in Colab / GPUs\
+this structure --> autoencoder --> GAN\
+try each, figure out what it can and can\'92t do before moving on to next structure\
+you can put conv layers in decoders etc. -- try convolutional autoencoder?\
+train GAN input parameters: decoder, discriminator, X_train, batch_size}

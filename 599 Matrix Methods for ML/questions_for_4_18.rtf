@@ -1,0 +1,59 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 I\'92d love to talk through Decision Theory 101 4.2.  Why is the ROC scale/alpha-invariant?\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+I\'92m running into memory issues in Colab with a T4 GPU session and downsampling to 8 kHz, which already sounds pretty bad.  What\'92s a good next step for me to train high-dimensionality generative models (ideally up to, like, 220,050 dimensional aka 5 seconds)?  Or just 2 seconds (88200-dimensional)?  Jetson Nano developer kits were retired and aren\'92t available.\
+\
+As I think about the resources I need to train generative audio models, I need a lot of memory as well as GPU.  Is there a way to calculate how much I\'92ll need from the dimensionality of the input/output and size of the various layers?\
+\
+So with RNNs, we have to think about three different sets of weights:\
+1) a set of weights Waa that gets multiplied by the output state of the previous step\
+2) a set of weights Wax that gets multiplied by the current input data in the time series\
+-- those two are added together plus a bias, an activation function is applied, and that\'92s the output state of the current time step --\
+3) after those are added plus a bias and an activation function applied, there\'92s a third set of weights Wya that gets multiplied by that result in order to produce output if we want it (maybe fed into some feedforward layers)\
+So the farther away a time step is from the current time step, the less effect it has on the current state / output / recurrent unit?\
+Are there ways to make an RNN look not just backward in time but also forward?\
+* RNNs make sense when you have an alphabet -- discrete units and no larger or smaller structure\
+\
+You train an autoencoder all at once, right, not the encoder first, then freeze it, then train the decoder separately?\
+\
+Does it make sense to train an autoencoder on multiple classes of data or does it make more sense to train it on a single class of data?\
+\
+TensorFlow\'92s default GAN example indicates that the discriminator and generator should be trained simultaneously.  Is this a good idea?  Is it better to train one network, freeze it, and then use that as the discriminator for another round of training in order to keep better track of what\'92s going on with each network individually?\
+\
+----------------\
+What is the naive method good at?\
+- it still gathers the general sonic envelope of the data (100/100 dataset)\
+- it reaches a point where the loss kind of ping-pongs around and stops decreasing for a while -- still very noisy, no distinct pitches\
+- only did this with the single-bird / single-not-bird data that was a speaking voice\
+\
+What is the autoencoder method good at?\
+- How could I optimize and refine the autoencoder? Activation functions? Depth of encoder / decoder? Number of codes? Number of intermediate outputs? Convolutional layers?\
+- Would it make sense, instead of bird vs. not-bird, to actually have the five classes of data?  Then I could interpolate between them?\
+- Using the full bird/not-bird dataset, it sounds like noise after 4000 training epochs, with a loss still of 0.35.  Should I replace the relu in the final layer of the encoder with a linear activation?  For now, I\'92ll keep training with the same network.\
+- After 7000 training epochs, the loss has actually increased, and it sounds just as much like noise.  Moving on to the GAN network structure.  My next steps would be to try turning one of the relu activation functions (in the encoder) to linear, since that helped before.\
+- Is there a way I could test for mode collapse?\
+\
+What is the GAN method good at?\
+- Starting with the 100 bird / 100 not dataset\
+- I\'92m running out of RAM just compiling the models on a non-GPU runtime...\
+\
+What questions would you ask someone that will allow you to understand what someone really wants? How are they manipulating the architecture to acccomplish what they really want?  What made someone unhapp with the first result?\
+\
+Send him: How would I interview myself for my project to reveal those answers? What sequence of questions would I ask myself?  Summarize the slides I made, then what questions would I ask myself to reveal the art but not the architecture?  Interview to reveal the decisions that get made\
+-free write the process -- how do you do what you\'92re doing?\
+-then write the questions I would have asked -- how do I break it down into simpler questions?\
+-then write my answers -- higher level of communication -- what\'92s different from the first one?\
+Email him, he can be a sounding board\
+\
+look at PyTorch for GAN stuff\
+Tensorflow is more aimed at Android and embedded stuff\
+Great Lakes computing cluster -- UM -- ask Raj for sponsorship, 1/10 the cost\
+make my own packages for this stuff\
+create own test suites -- to run on each new framework -- including timing and accuracy benchmarks}
