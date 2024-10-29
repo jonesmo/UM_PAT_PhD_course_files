@@ -1,0 +1,148 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 # CIRCLE\
+m = 30\
+n = 20\
+circle(x, y, r) = (x - m / 4)^2 + (y - n / 3)^2 < r^2\
+FXY = [circle(x, y, 5) for x in 1:m, y in 1:n]\
+# FXY is 30x20 matrix\
+\
+Dn = spdiagm(0 => -ones(n), 1 => ones(n-1))\
+Dn[n, 1] = 1\
+# Dn is 20x20 matrix\
+\
+Dm = spdiagm(0 => -ones(m), -1 => ones(m-1))\
+Dm[1, m] = 1\
+# Dm is 30x30 matrix\
+\
+ident_n = spdiagm(0 => ones(n))\
+# In is 20x20 matrix\
+ident_m = spdiagm(0 => ones(m))\
+# Im is 30x30 matrix\
+\
+DFDX = Dm' * FXY\
+# DFDX is a 30x20 matrix\
+\
+DFDY = FXY * Dn'\
+# DFDY is a 30x20 matrix\
+\
+x_term = kron(ident_n, Dm')\
+# x_term is a 600x600 matrix\
+\
+y_term = kron(Dn, ident_m)\
+# y_term is a 600x600 matrix\
+\
+A = [x_term;\
+     y_term]\
+# A should be 1200 x 600 matrix\
+\
+image_vec = A * vec(FXY)\
+along_columns = image_vec[1:600]\
+image_along_columns = reshape(along_columns, (30, 20))\
+along_rows = image_vec[601:1200]\
+image_along_rows = reshape(along_rows, (30, 20))\
+\
+display(heatmap(\
+        FXY';\
+        title="FXY",\
+        aspect_ratio=1.0,\
+        clims=(-1, 1)\
+))\
+\
+display(heatmap(\
+        collect(DFDX');\
+        title="DFDX",\
+        aspect_ratio=1.0,\
+        clims=(-1, 1)\
+))\
+\
+display(heatmap(\
+        collect(DFDY');\
+        title="DFDY",\
+        aspect_ratio=1.0,\
+        clims=(-1, 1)\
+))\
+\
+display(heatmap(\
+        collect(image_along_columns');\
+        title="image_along_columns",\
+        aspect_ratio=1.0,\
+        clims=(-1, 1)\
+))\
+\
+display(heatmap(\
+        collect(image_along_rows');\
+        title="image_along_rows",\
+        aspect_ratio=1.0,\
+        clims=(-1, 1)\
+))\
+\
+#########\
+# SMALL RECTANGLE\
+m = 5\
+n = 4\
+FXY = [0 0 0 0; 0 1 1 0; 0 1 1 0; 0 1 1 0; 0 0 0 0]\
+\
+Dn = spdiagm(0 => -ones(n), 1 => ones(n-1))\
+Dn[n, 1] = 1\
+display(collect(Dn))\
+\
+Dm = spdiagm(0 => -ones(m), 1 => ones(m-1))\
+Dm[1, m] = 1\
+display(collect(Dm))\
+\
+ident_n = spdiagm(0 => ones(n))\
+ident_m = spdiagm(0 => ones(m))\
+\
+# x_term = kron(ident_n, Dm')\
+x_term = kron(ident_n, Dm)\
+y_term = kron(Dn, ident_m)\
+\
+A = [x_term;\
+     y_term]\
+\
+image_vec = A * vec(FXY)\
+along_columns = image_vec[1:(m*n)]\
+image_along_columns = reshape(along_columns, (m, n))\
+along_rows = image_vec[(m*n + 1):(2 * m * n)]\
+image_along_rows = reshape(along_rows, (m, n))\
+\
+display(heatmap(\
+        FXY';\
+        title="FXY",\
+        aspect_ratio=1.0,\
+        clims=(-1, 1)\
+))\
+\
+# display(heatmap(\
+#         collect(DFDX');\
+#         title="DFDX",\
+#         aspect_ratio=1.0,\
+#         clims=(-1, 1)\
+# ))\
+\
+# display(heatmap(\
+#         collect(DFDY');\
+#         title="DFDY",\
+#         aspect_ratio=1.0,\
+#         clims=(-1, 1)\
+# ))\
+\
+display(heatmap(\
+        collect(image_along_columns');\
+        title="image_along_columns",\
+        aspect_ratio=1.0,\
+        clims=(-1, 1)\
+))\
+\
+display(heatmap(\
+        collect(image_along_rows');\
+        title="image_along_rows",\
+        aspect_ratio=1.0,\
+        clims=(-1, 1)\
+))}
