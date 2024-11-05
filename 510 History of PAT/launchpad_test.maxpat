@@ -40,13 +40,24 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 683.0, 137.0, 89.0, 20.0 ],
+					"text" : "blackout pads"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-5",
-					"maxclass" : "toggle",
+					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 643.0, 135.0, 24.0, 24.0 ]
+					"patching_rect" : [ 644.0, 130.0, 34.0, 34.0 ]
 				}
 
 			}
@@ -67,7 +78,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 223.0, 144.0, 1288.0, 782.0 ],
+						"rect" : [ 127.0, 151.0, 1422.0, 828.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -95,6 +106,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -103,7 +115,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "int" ],
+									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 777.0, 56.0, 30.0, 30.0 ],
 									"tricolor" : [ 0.925490196078431, 0.533333333333333, 0.0, 1.0 ]
 								}
@@ -160,15 +172,15 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 100.5, 1362.0, 96.0, 89.0 ],
-									"text" : "jk.lpx @pad 0 @oncolor m @offcolor g @textoff 0 @texton boom @mode b",
+									"patching_rect" : [ 100.5, 1362.0, 92.0, 89.0 ],
+									"text" : "jk.lpx @pad 0 @oncolor m @offcolor y @textoff 0 @texton boom @mode b",
 									"varname" : "jkpush0"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"activebgcolor" : [ 1.0, 1.0, 0.0, 1.0 ],
 									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
@@ -304,15 +316,15 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 453.0, 1362.0, 94.0, 89.0 ],
-									"text" : "jk.lpx @pad 2 @oncolor m @offcolor g @textoff 2 @texton boom @mode b",
+									"patching_rect" : [ 453.0, 1362.0, 92.0, 89.0 ],
+									"text" : "jk.lpx @pad 2 @oncolor m @offcolor o @textoff 2 @texton boom @mode b",
 									"varname" : "jkpush2"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"activebgcolor" : [ 1.0, 0.5, 0.035, 1.0 ],
 									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
@@ -443,21 +455,21 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-221",
-									"linecount" : 7,
+									"linecount" : 6,
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 780.0, 1362.0, 80.0, 102.0 ],
-									"text" : "jk.lpx @pad 4 @oncolor m @offcolor g @textoff 4 @texton boom @mode b",
+									"patching_rect" : [ 780.0, 1362.0, 91.0, 89.0 ],
+									"text" : "jk.lpx @pad 4 @oncolor c @offcolor md @textoff 4 @texton boom @mode b",
 									"varname" : "jkpush4"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.7, 0.0, 0.7, 1.0 ],
+									"activebgoncolor" : [ 0.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -515,21 +527,21 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-224",
-									"linecount" : 7,
+									"linecount" : 6,
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 956.5, 1362.0, 80.0, 102.0 ],
-									"text" : "jk.lpx @pad 5 @oncolor m @offcolor g @textoff 5 @texton boom @mode b",
+									"patching_rect" : [ 956.5, 1362.0, 91.0, 89.0 ],
+									"text" : "jk.lpx @pad 5 @oncolor w @offcolor c @textoff 5 @texton boom @mode b",
 									"varname" : "jkpush5"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 1.0, 1.0, 1.0 ],
+									"activebgoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -592,16 +604,16 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 1132.0, 1362.0, 90.0, 89.0 ],
-									"text" : "jk.lpx @pad 6 @oncolor m @offcolor g @textoff 6 @texton boom @mode b",
+									"patching_rect" : [ 1132.0, 1362.0, 91.0, 89.0 ],
+									"text" : "jk.lpx @pad 6 @oncolor w @offcolor m @textoff 6 @texton boom @mode b",
 									"varname" : "jkpush6"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -664,16 +676,16 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 1309.5, 1362.0, 92.0, 89.0 ],
-									"text" : "jk.lpx @pad 7 @oncolor m @offcolor g @textoff 7 @texton boom @mode b",
+									"patching_rect" : [ 1309.5, 1362.0, 91.0, 89.0 ],
+									"text" : "jk.lpx @pad 7 @oncolor y @offcolor w @textoff 7 @texton boom @mode b",
 									"varname" : "jkpush7"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -809,14 +821,14 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 269.0, 1209.0, 90.0, 89.0 ],
-									"text" : "jk.lpx @pad 9 @oncolor m @offcolor g @textoff 9 @texton boom @mode b",
+									"text" : "jk.lpx @pad 9 @oncolor m @offcolor o @textoff 9 @texton boom @mode b",
 									"varname" : "jkpush9"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"activebgcolor" : [ 1.0, 0.5, 0.035, 1.0 ],
 									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
@@ -952,15 +964,15 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 617.0, 1209.0, 91.0, 89.0 ],
-									"text" : "jk.lpx @pad 11 @oncolor m @offcolor g @textoff 11 @texton boom @mode b",
+									"patching_rect" : [ 617.0, 1209.0, 94.0, 89.0 ],
+									"text" : "jk.lpx @pad 11 @oncolor m @offcolor y @textoff 11 @texton boom @mode b",
 									"varname" : "jkpush11"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"activebgcolor" : [ 1.0, 1.0, 0.0, 1.0 ],
 									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
@@ -1024,16 +1036,16 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 780.0, 1209.0, 90.0, 89.0 ],
-									"text" : "jk.lpx @pad 12 @oncolor m @offcolor g @textoff 12 @texton boom @mode b",
+									"patching_rect" : [ 780.0, 1209.0, 91.0, 89.0 ],
+									"text" : "jk.lpx @pad 12 @oncolor c @offcolor w @textoff 12 @texton boom @mode b",
 									"varname" : "jkpush12"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"activebgoncolor" : [ 0.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -1096,16 +1108,16 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 956.5, 1209.0, 90.0, 89.0 ],
-									"text" : "jk.lpx @pad 13 @oncolor m @offcolor g @textoff 13 @texton boom @mode b",
+									"patching_rect" : [ 956.5, 1209.0, 91.0, 89.0 ],
+									"text" : "jk.lpx @pad 13 @oncolor w @offcolor c @textoff 13 @texton boom @mode b",
 									"varname" : "jkpush13"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 1.0, 1.0, 1.0 ],
+									"activebgoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -1168,16 +1180,16 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 1132.0, 1209.0, 91.0, 89.0 ],
-									"text" : "jk.lpx @pad 14 @oncolor m @offcolor g @textoff 14 @texton boom @mode b",
+									"patching_rect" : [ 1128.0, 1209.0, 95.0, 89.0 ],
+									"text" : "jk.lpx @pad 14 @oncolor w @offcolor m @textoff 14 @texton boom @mode b",
 									"varname" : "jkpush14"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -1241,15 +1253,16 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 1309.5, 1209.0, 91.0, 89.0 ],
-									"text" : "jk.lpx @pad 15 @oncolor m @offcolor g @textoff 15 @texton boom @mode b",
+									"text" : "jk.lpx @pad 15 @oncolor y @offcolor pd @textoff 15 @texton boom @mode b",
 									"varname" : "jkpush15"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.4, 0.175, 0.485, 1.0 ],
+									"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -1313,14 +1326,14 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 100.5, 1053.0, 92.0, 89.0 ],
-									"text" : "jk.lpx @pad 16 @oncolor m @offcolor g @textoff 16 @texton boom @mode b",
+									"text" : "jk.lpx @pad 16 @oncolor m @offcolor o @textoff 16 @texton boom @mode b",
 									"varname" : "jkpush16"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"activebgcolor" : [ 1.0, 0.5, 0.035, 1.0 ],
 									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
@@ -1457,14 +1470,14 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 453.0, 1053.0, 92.0, 89.0 ],
-									"text" : "jk.lpx @pad 18 @oncolor m @offcolor g @textoff 18 @texton boom @mode b",
+									"text" : "jk.lpx @pad 18 @oncolor m @offcolor y @textoff 18 @texton boom @mode b",
 									"varname" : "jkpush18"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"activebgcolor" : [ 1.0, 1.0, 0.0, 1.0 ],
 									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
@@ -1600,16 +1613,16 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 780.0, 1053.0, 90.0, 89.0 ],
-									"text" : "jk.lpx @pad 20 @oncolor m @offcolor g @textoff 20 @texton boom @mode b",
+									"patching_rect" : [ 780.0, 1053.0, 91.0, 89.0 ],
+									"text" : "jk.lpx @pad 20 @oncolor c @offcolor w @textoff 20 @texton boom @mode b",
 									"varname" : "jkpush20"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"activebgoncolor" : [ 0.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -1672,16 +1685,16 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 956.5, 1053.0, 90.0, 89.0 ],
-									"text" : "jk.lpx @pad 21 @oncolor m @offcolor g @textoff 21 @texton boom @mode b",
+									"patching_rect" : [ 956.5, 1053.0, 91.0, 89.0 ],
+									"text" : "jk.lpx @pad 21 @oncolor w @offcolor c @textoff 21 @texton boom @mode b",
 									"varname" : "jkpush21"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 1.0, 1.0, 1.0 ],
+									"activebgoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -1744,16 +1757,16 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 1132.0, 1053.0, 91.0, 89.0 ],
-									"text" : "jk.lpx @pad 22 @oncolor m @offcolor g @textoff 22 @texton boom @mode b",
+									"patching_rect" : [ 1128.0, 1053.0, 95.0, 89.0 ],
+									"text" : "jk.lpx @pad 22 @oncolor w @offcolor cd @textoff 22 @texton boom @mode b",
 									"varname" : "jkpush22"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 0.6, 0.7, 1.0 ],
+									"activebgoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -1817,15 +1830,15 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 1309.5, 1053.0, 91.0, 89.0 ],
-									"text" : "jk.lpx @pad 23 @oncolor m @offcolor g @textoff 23 @texton boom @mode b",
+									"text" : "jk.lpx @pad 23 @oncolor y @offcolor w @textoff 23 @texton boom @mode b",
 									"varname" : "jkpush23"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -1961,14 +1974,14 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 269.0, 900.0, 91.0, 89.0 ],
-									"text" : "jk.lpx @pad 25 @oncolor m @offcolor g @textoff 25 @texton boom @mode b",
+									"text" : "jk.lpx @pad 25 @oncolor m @offcolor y @textoff 25 @texton boom @mode b",
 									"varname" : "jkpush25"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"activebgcolor" : [ 1.0, 1.0, 0.0, 1.0 ],
 									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
@@ -2105,14 +2118,14 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 617.0, 900.0, 92.0, 89.0 ],
-									"text" : "jk.lpx @pad 27 @oncolor m @offcolor g @textoff 27 @texton boom @mode b",
+									"text" : "jk.lpx @pad 27 @oncolor m @offcolor o @textoff 27 @texton boom @mode b",
 									"varname" : "jkpush27"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"activebgcolor" : [ 1.0, 0.5, 0.035, 1.0 ],
 									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
@@ -2176,16 +2189,16 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 780.0, 900.0, 90.0, 89.0 ],
-									"text" : "jk.lpx @pad 28 @oncolor m @offcolor g @textoff 28 @texton boom @mode b",
+									"patching_rect" : [ 780.0, 900.0, 91.0, 89.0 ],
+									"text" : "jk.lpx @pad 28 @oncolor c @offcolor w @textoff 28 @texton boom @mode b",
 									"varname" : "jkpush28"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"activebgoncolor" : [ 0.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -2248,16 +2261,17 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 956.5, 900.0, 90.0, 89.0 ],
-									"text" : "jk.lpx @pad 29 @oncolor m @offcolor g @textoff 29 @texton boom @mode b",
+									"patching_rect" : [ 956.5, 900.0, 91.0, 89.0 ],
+									"text" : "jk.lpx @pad 29 @oncolor w @offcolor pd @textoff 29 @texton boom @mode b",
 									"varname" : "jkpush29"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.4, 0.175, 0.485, 1.0 ],
+									"activebgoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -2320,16 +2334,16 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 1132.0, 900.0, 91.0, 89.0 ],
-									"text" : "jk.lpx @pad 30 @oncolor m @offcolor g @textoff 30 @texton boom @mode b",
+									"patching_rect" : [ 1128.0, 900.0, 95.0, 89.0 ],
+									"text" : "jk.lpx @pad 30 @oncolor w @offcolor m @textoff 30 @texton boom @mode b",
 									"varname" : "jkpush30"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -2392,16 +2406,16 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 1309.5, 900.0, 91.0, 89.0 ],
-									"text" : "jk.lpx @pad 31 @oncolor m @offcolor g @textoff 31 @texton boom @mode b",
+									"patching_rect" : [ 1309.5, 900.0, 92.0, 89.0 ],
+									"text" : "jk.lpx @pad 31 @oncolor y @offcolor w @textoff 31 @texton boom @mode b",
 									"varname" : "jkpush31"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -2465,15 +2479,16 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 100.5, 744.0, 92.0, 89.0 ],
-									"text" : "jk.lpx @pad 32 @oncolor m @offcolor g @textoff 32 @texton boom @mode b",
+									"text" : "jk.lpx @pad 32 @oncolor y @offcolor p @textoff 32 @texton boom @mode b",
 									"varname" : "jkpush32"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.8, 0.35, 0.95, 1.0 ],
+									"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -2536,16 +2551,17 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 269.0, 744.0, 91.0, 89.0 ],
-									"text" : "jk.lpx @pad 33 @oncolor m @offcolor g @textoff 33 @texton boom @mode b",
+									"patching_rect" : [ 269.0, 744.0, 94.0, 89.0 ],
+									"text" : "jk.lpx @pad 33 @oncolor y @offcolor p @textoff 33 @texton boom @mode b",
 									"varname" : "jkpush33"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.8, 0.35, 0.95, 1.0 ],
+									"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -2609,15 +2625,16 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 453.0, 744.0, 92.0, 89.0 ],
-									"text" : "jk.lpx @pad 34 @oncolor m @offcolor g @textoff 34 @texton boom @mode b",
+									"text" : "jk.lpx @pad 34 @oncolor y @offcolor k @textoff 34 @texton boom @mode b",
 									"varname" : "jkpush34"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -2681,15 +2698,16 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 617.0, 744.0, 92.0, 89.0 ],
-									"text" : "jk.lpx @pad 35 @oncolor m @offcolor g @textoff 35 @texton boom @mode b",
+									"text" : "jk.lpx @pad 35 @oncolor y @offcolor p @textoff 35 @texton boom @mode b",
 									"varname" : "jkpush35"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.8, 0.35, 0.95, 1.0 ],
+									"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -2752,16 +2770,16 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 780.0, 744.0, 90.0, 89.0 ],
-									"text" : "jk.lpx @pad 36 @oncolor m @offcolor g @textoff 36 @texton boom @mode b",
+									"patching_rect" : [ 780.0, 744.0, 91.0, 89.0 ],
+									"text" : "jk.lpx @pad 36 @oncolor g @offcolor od @textoff 36 @texton boom @mode b",
 									"varname" : "jkpush36"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.8, 0.4, 0.0, 1.0 ],
+									"activebgoncolor" : [ 0.0, 1.0, 0.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -2824,16 +2842,16 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 956.5, 744.0, 90.0, 89.0 ],
-									"text" : "jk.lpx @pad 37 @oncolor m @offcolor g @textoff 37 @texton boom @mode b",
+									"patching_rect" : [ 956.5, 744.0, 91.0, 89.0 ],
+									"text" : "jk.lpx @pad 37 @oncolor g @offcolor od @textoff 37 @texton boom @mode b",
 									"varname" : "jkpush37"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.8, 0.4, 0.0, 1.0 ],
+									"activebgoncolor" : [ 0.0, 1.0, 0.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -2896,16 +2914,16 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 1132.0, 744.0, 91.0, 89.0 ],
-									"text" : "jk.lpx @pad 38 @oncolor m @offcolor g @textoff 38 @texton boom @mode b",
+									"patching_rect" : [ 1128.0, 744.0, 95.0, 89.0 ],
+									"text" : "jk.lpx @pad 38 @oncolor g @offcolor od @textoff 38 @texton boom @mode b",
 									"varname" : "jkpush38"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.8, 0.4, 0.0, 1.0 ],
+									"activebgoncolor" : [ 0.0, 1.0, 0.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -2969,15 +2987,15 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 1309.5, 744.0, 91.0, 89.0 ],
-									"text" : "jk.lpx @pad 39 @oncolor m @offcolor g @textoff 39 @texton boom @mode b",
+									"text" : "jk.lpx @pad 39 @oncolor g @offcolor cd @textoff 39 @texton boom @mode b",
 									"varname" : "jkpush39"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 0.6, 0.7, 1.0 ],
+									"activebgoncolor" : [ 0.0, 1.0, 0.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -3041,15 +3059,16 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 100.5, 587.0, 92.0, 89.0 ],
-									"text" : "jk.lpx @pad 40 @oncolor m @offcolor g @textoff 40 @texton boom @mode b",
+									"text" : "jk.lpx @pad 40 @oncolor y @offcolor p @textoff 40 @texton boom @mode b",
 									"varname" : "jkpush40"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.8, 0.35, 0.95, 1.0 ],
+									"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -3113,15 +3132,16 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 269.0, 587.0, 91.0, 89.0 ],
-									"text" : "jk.lpx @pad 41 @oncolor m @offcolor g @textoff 41 @texton boom @mode b",
+									"text" : "jk.lpx @pad 41 @oncolor y @offcolor k @textoff 41 @texton boom @mode b",
 									"varname" : "jkpush41"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -3185,15 +3205,16 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 453.0, 587.0, 92.0, 89.0 ],
-									"text" : "jk.lpx @pad 42 @oncolor m @offcolor g @textoff 42 @texton boom @mode b",
+									"text" : "jk.lpx @pad 42 @oncolor y @offcolor p @textoff 42 @texton boom @mode b",
 									"varname" : "jkpush42"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.8, 0.35, 0.95, 1.0 ],
+									"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -3257,15 +3278,16 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 617.0, 587.0, 92.0, 89.0 ],
-									"text" : "jk.lpx @pad 43 @oncolor m @offcolor g @textoff 43 @texton boom @mode b",
+									"text" : "jk.lpx @pad 43 @oncolor y @offcolor p @textoff 43 @texton boom @mode b",
 									"varname" : "jkpush43"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.8, 0.35, 0.95, 1.0 ],
+									"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -3328,16 +3350,16 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 780.0, 587.0, 90.0, 89.0 ],
-									"text" : "jk.lpx @pad 44 @oncolor m @offcolor g @textoff 44 @texton boom @mode b",
+									"patching_rect" : [ 780.0, 587.0, 91.0, 89.0 ],
+									"text" : "jk.lpx @pad 44 @oncolor g @offcolor od @textoff 44 @texton boom @mode b",
 									"varname" : "jkpush44"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.8, 0.4, 0.0, 1.0 ],
+									"activebgoncolor" : [ 0.0, 1.0, 0.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -3400,16 +3422,16 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 956.5, 587.0, 90.0, 89.0 ],
-									"text" : "jk.lpx @pad 45 @oncolor m @offcolor g @textoff 45 @texton boom @mode b",
+									"patching_rect" : [ 956.5, 587.0, 91.0, 89.0 ],
+									"text" : "jk.lpx @pad 45 @oncolor g @offcolor cd @textoff 45 @texton boom @mode b",
 									"varname" : "jkpush45"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 0.6, 0.7, 1.0 ],
+									"activebgoncolor" : [ 0.0, 1.0, 0.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -3472,16 +3494,16 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 1132.0, 587.0, 91.0, 89.0 ],
-									"text" : "jk.lpx @pad 46 @oncolor m @offcolor g @textoff 46 @texton boom @mode b",
+									"patching_rect" : [ 1128.0, 587.0, 95.0, 89.0 ],
+									"text" : "jk.lpx @pad 46 @oncolor g @offcolor od @textoff 46 @texton boom @mode b",
 									"varname" : "jkpush46"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.8, 0.4, 0.0, 1.0 ],
+									"activebgoncolor" : [ 0.0, 1.0, 0.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -3545,15 +3567,15 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 1309.5, 587.0, 91.0, 89.0 ],
-									"text" : "jk.lpx @pad 47 @oncolor m @offcolor g @textoff 47 @texton boom @mode b",
+									"text" : "jk.lpx @pad 47 @oncolor g @offcolor od @textoff 47 @texton boom @mode b",
 									"varname" : "jkpush47"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.8, 0.4, 0.0, 1.0 ],
+									"activebgoncolor" : [ 0.0, 1.0, 0.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -3617,15 +3639,16 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 100.5, 433.0, 92.0, 89.0 ],
-									"text" : "jk.lpx @pad 48 @oncolor m @offcolor g @textoff 48 @texton boom @mode b",
+									"text" : "jk.lpx @pad 48 @oncolor y @offcolor k @textoff 48 @texton boom @mode b",
 									"varname" : "jkpush48"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -3689,15 +3712,16 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 269.0, 433.0, 91.0, 89.0 ],
-									"text" : "jk.lpx @pad 49 @oncolor m @offcolor g @textoff 49 @texton boom @mode b",
+									"text" : "jk.lpx @pad 49 @oncolor y @offcolor p @textoff 49 @texton boom @mode b",
 									"varname" : "jkpush49"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.8, 0.35, 0.95, 1.0 ],
+									"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -3761,15 +3785,16 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 453.0, 433.0, 92.0, 89.0 ],
-									"text" : "jk.lpx @pad 50 @oncolor m @offcolor g @textoff 50 @texton boom @mode b",
+									"text" : "jk.lpx @pad 50 @oncolor y @offcolor p @textoff 50 @texton boom @mode b",
 									"varname" : "jkpush50"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.8, 0.35, 0.95, 1.0 ],
+									"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -3833,15 +3858,16 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 617.0, 433.0, 92.0, 89.0 ],
-									"text" : "jk.lpx @pad 51 @oncolor m @offcolor g @textoff 51 @texton boom @mode b",
+									"text" : "jk.lpx @pad 51 @oncolor y @offcolor k @textoff 51 @texton boom @mode b",
 									"varname" : "jkpush51"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -3905,15 +3931,15 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 780.0, 433.0, 91.0, 89.0 ],
-									"text" : "jk.lpx @pad 52 @oncolor m @offcolor g @textoff 52 @texton boom @mode b",
+									"text" : "jk.lpx @pad 52 @oncolor g @offcolor od @textoff 52 @texton boom @mode b",
 									"varname" : "jkpush52"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.8, 0.4, 0.0, 1.0 ],
+									"activebgoncolor" : [ 0.0, 1.0, 0.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -3977,15 +4003,15 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 956.5, 433.0, 91.0, 89.0 ],
-									"text" : "jk.lpx @pad 53 @oncolor m @offcolor g @textoff 53 @texton boom @mode b",
+									"text" : "jk.lpx @pad 53 @oncolor g @offcolor od @textoff 53 @texton boom @mode b",
 									"varname" : "jkpush53"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.8, 0.4, 0.0, 1.0 ],
+									"activebgoncolor" : [ 0.0, 1.0, 0.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -4048,16 +4074,16 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 1132.0, 433.0, 91.0, 89.0 ],
-									"text" : "jk.lpx @pad 54 @oncolor m @offcolor g @textoff 54 @texton boom @mode b",
+									"patching_rect" : [ 1128.0, 433.0, 95.0, 89.0 ],
+									"text" : "jk.lpx @pad 54 @oncolor g @offcolor cd @textoff 54 @texton boom @mode b",
 									"varname" : "jkpush54"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 0.6, 0.7, 1.0 ],
+									"activebgoncolor" : [ 0.0, 1.0, 0.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -4121,15 +4147,15 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 1309.5, 433.0, 91.0, 89.0 ],
-									"text" : "jk.lpx @pad 55 @oncolor m @offcolor g @textoff 55 @texton boom @mode b",
+									"text" : "jk.lpx @pad 55 @oncolor g @offcolor od @textoff 55 @texton boom @mode b",
 									"varname" : "jkpush55"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.8, 0.4, 0.0, 1.0 ],
+									"activebgoncolor" : [ 0.0, 1.0, 0.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -4193,15 +4219,16 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 100.5, 303.0, 92.0, 89.0 ],
-									"text" : "jk.lpx @pad 56 @oncolor m @offcolor g @textoff 56 @texton boom @mode b",
+									"text" : "jk.lpx @pad 56 @oncolor y @offcolor p @textoff 56 @texton on @mode b",
 									"varname" : "jkpush56"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.8, 0.35, 0.95, 1.0 ],
+									"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -4251,7 +4278,7 @@
 									}
 ,
 									"text" : "56",
-									"texton" : "boom",
+									"texton" : "on",
 									"varname" : "pushtext56"
 								}
 
@@ -4265,15 +4292,16 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 269.0, 303.0, 91.0, 89.0 ],
-									"text" : "jk.lpx @pad 57 @oncolor m @offcolor g @textoff 57 @texton boom @mode b",
+									"text" : "jk.lpx @pad 57 @oncolor y @offcolor p @textoff 57 @texton boom @mode b",
 									"varname" : "jkpush57"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.8, 0.35, 0.95, 1.0 ],
+									"activebgoncolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -4337,15 +4365,16 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 453.0, 303.0, 92.0, 89.0 ],
-									"text" : "jk.lpx @pad 58 @oncolor m @offcolor g @textoff 58 @texton boom @mode b",
+									"text" : "jk.lpx @pad 58 @oncolor m @offcolor k @textoff 58 @texton boom @mode b",
 									"varname" : "jkpush58"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -4409,15 +4438,16 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 617.0, 303.0, 92.0, 89.0 ],
-									"text" : "jk.lpx @pad 59 @oncolor m @offcolor g @textoff 59 @texton boom @mode b",
+									"text" : "jk.lpx @pad 59 @oncolor m @offcolor p @textoff 59 @texton boom @mode b",
 									"varname" : "jkpush59"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"activebgcolor" : [ 0.8, 0.35, 0.95, 1.0 ],
 									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -4480,15 +4510,15 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 780.0, 303.0, 90.0, 89.0 ],
-									"text" : "jk.lpx @pad 60 @oncolor m @offcolor g @textoff 60 @texton boom @mode b",
+									"patching_rect" : [ 780.0, 303.0, 91.0, 89.0 ],
+									"text" : "jk.lpx @pad 60 @oncolor m @offcolor cd @textoff 60 @texton boom @mode b",
 									"varname" : "jkpush60"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 0.6, 0.7, 1.0 ],
 									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
@@ -4552,16 +4582,16 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 956.5, 303.0, 90.0, 89.0 ],
-									"text" : "jk.lpx @pad 61 @oncolor m @offcolor g @textoff 61 @texton boom @mode b",
+									"patching_rect" : [ 956.5, 303.0, 91.0, 89.0 ],
+									"text" : "jk.lpx @pad 61 @oncolor g @offcolor od @textoff 61 @texton boom @mode b",
 									"varname" : "jkpush61"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.8, 0.4, 0.0, 1.0 ],
+									"activebgoncolor" : [ 0.0, 1.0, 0.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -4624,16 +4654,16 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 1132.0, 303.0, 91.0, 89.0 ],
-									"text" : "jk.lpx @pad 62 @oncolor m @offcolor g @textoff 62 @texton boom @mode b",
+									"patching_rect" : [ 1128.0, 303.0, 95.0, 89.0 ],
+									"text" : "jk.lpx @pad 62 @oncolor g @offcolor od @textoff 62 @texton boom @mode b",
 									"varname" : "jkpush62"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.8, 0.4, 0.0, 1.0 ],
+									"activebgoncolor" : [ 0.0, 1.0, 0.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -4697,15 +4727,15 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 1309.5, 303.0, 91.0, 89.0 ],
-									"text" : "jk.lpx @pad 63 @oncolor m @offcolor g @textoff 63 @texton bang @mode b",
+									"text" : "jk.lpx @pad 63 @oncolor g @offcolor od @textoff 63 @texton bang @mode b",
 									"varname" : "jkpush63"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.8, 0.4, 0.0, 1.0 ],
+									"activebgoncolor" : [ 0.0, 1.0, 0.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -4782,7 +4812,7 @@
 									"fontname" : "Ableton Sans Medium",
 									"fontsize" : 9.0,
 									"id" : "obj-1",
-									"items" : [ "Launchpad X LPX DAW Out", ",", "Launchpad X LPX MIDI Out", ",", "to Max 1", ",", "to Max 2" ],
+									"items" : [ "to Max 1", ",", "to Max 2" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -4979,16 +5009,17 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 85.5, 174.0, 99.0, 89.0 ],
-									"text" : "jk.lpx @button up @oncolor m @offcolor g @textoff up @texton boom @mode b",
+									"patching_rect" : [ 85.5, 174.0, 107.0, 89.0 ],
+									"text" : "jk.lpx @button up @oncolor m @offcolor k @textoff 1 @texton start @mode b",
 									"varname" : "jkpush2[1]"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -5037,8 +5068,8 @@
 
 									}
 ,
-									"text" : "up",
-									"texton" : "boom",
+									"text" : "1",
+									"texton" : "start",
 									"varname" : "pushtext2[1]"
 								}
 
@@ -5052,15 +5083,16 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 254.0, 174.0, 109.0, 89.0 ],
-									"text" : "jk.lpx @button down @oncolor m @offcolor g @textoff down @texton boom @mode b",
+									"text" : "jk.lpx @button down @oncolor m @offcolor k @textoff 2 @texton start @mode b",
 									"varname" : "jkpush3[1]"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -5109,8 +5141,8 @@
 
 									}
 ,
-									"text" : "down",
-									"texton" : "boom",
+									"text" : "2",
+									"texton" : "start",
 									"varname" : "pushtext3[1]"
 								}
 
@@ -5123,16 +5155,17 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 438.0, 174.0, 90.0, 89.0 ],
-									"text" : "jk.lpx @button left @oncolor m @offcolor g @textoff left @texton boom @mode b",
+									"patching_rect" : [ 438.0, 174.0, 107.0, 89.0 ],
+									"text" : "jk.lpx @button left @oncolor m @offcolor k @textoff 3 @texton start @mode b",
 									"varname" : "jkpush4[1]"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -5181,8 +5214,8 @@
 
 									}
 ,
-									"text" : "left",
-									"texton" : "boom",
+									"text" : "3",
+									"texton" : "start",
 									"varname" : "pushtext4[1]"
 								}
 
@@ -5195,16 +5228,17 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 602.0, 174.0, 93.0, 89.0 ],
-									"text" : "jk.lpx @button right @oncolor m @offcolor g @textoff right @texton boom @mode b",
+									"patching_rect" : [ 602.0, 174.0, 107.0, 89.0 ],
+									"text" : "jk.lpx @button right @oncolor m @offcolor k @textoff 4 @texton start @mode b",
 									"varname" : "jkpush5[1]"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -5253,8 +5287,8 @@
 
 									}
 ,
-									"text" : "right",
-									"texton" : "boom",
+									"text" : "4",
+									"texton" : "start",
 									"varname" : "pushtext5[1]"
 								}
 
@@ -5267,16 +5301,17 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 765.0, 174.0, 101.0, 116.0 ],
-									"text" : "jk.lpx @button sessionmixer @oncolor m @offcolor g @textoff sessionmixer @texton boom @mode b",
+									"patching_rect" : [ 765.0, 174.0, 106.0, 116.0 ],
+									"text" : "jk.lpx @button sessionmixer @oncolor m @offcolor k @textoff sessionmixer @texton boom @mode b",
 									"varname" : "jkpush6[1]"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -5339,16 +5374,17 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 941.5, 174.0, 90.0, 89.0 ],
-									"text" : "jk.lpx @button note @oncolor m @offcolor g @textoff note @texton boom @mode b",
+									"patching_rect" : [ 941.5, 174.0, 106.0, 89.0 ],
+									"text" : "jk.lpx @button note @oncolor m @offcolor k @textoff note @texton boom @mode b",
 									"varname" : "jkpush7[1]"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -5406,21 +5442,22 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-228",
-									"linecount" : 7,
+									"linecount" : 6,
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 1117.0, 174.0, 98.0, 102.0 ],
-									"text" : "jk.lpx @button custom @oncolor m @offcolor g @textoff custom @texton boom @mode b",
+									"patching_rect" : [ 1117.0, 174.0, 106.0, 89.0 ],
+									"text" : "jk.lpx @button custom @oncolor m @offcolor k @textoff custom @texton boom @mode b",
 									"varname" : "jkpush8[1]"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -5478,21 +5515,23 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-231",
-									"linecount" : 8,
+									"linecount" : 7,
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 1294.5, 174.0, 92.0, 116.0 ],
-									"text" : "jk.lpx @button capturemidi @oncolor m @offcolor g @textoff capturemidi @texton boom @mode b",
+									"patching_rect" : [ 1286.0, 174.0, 114.0, 102.0 ],
+									"text" : "jk.lpx @button capturemidi @oncolor p @offcolor k @textoff black_out @texton go @mode b",
 									"varname" : "jkpush9[1]"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"activebgoncolor" : [ 0.8, 0.35, 0.95, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"activetextoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -5541,8 +5580,8 @@
 
 									}
 ,
-									"text" : "capturemidi",
-									"texton" : "boom",
+									"text" : "black_out",
+									"texton" : "go",
 									"varname" : "pushtext9[1]"
 								}
 
@@ -5555,16 +5594,17 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
-									"patching_rect" : [ 1459.0, 174.0, 93.0, 89.0 ],
-									"text" : "jk.lpx @button logo @oncolor m @offcolor g @textoff logo @texton logo @mode b",
+									"patching_rect" : [ 1459.0, 174.0, 103.0, 89.0 ],
+									"text" : "jk.lpx @button logo @oncolor m @offcolor k @textoff logo @texton logo @mode b",
 									"varname" : "jkpush10[1]"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -5628,15 +5668,16 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 1459.0, 1362.0, 105.0, 89.0 ],
-									"text" : "jk.lpx @button scene8 @oncolor m @offcolor g @textoff scene8 @texton boom @mode b",
+									"text" : "jk.lpx @button scene8 @oncolor m @offcolor k @textoff scene8 @texton boom @mode b",
 									"varname" : "jkpush15[1]"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -5700,15 +5741,16 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 1459.0, 1209.0, 105.0, 89.0 ],
-									"text" : "jk.lpx @button scene7 @oncolor m @offcolor g @textoff scene7 @texton boom @mode b",
+									"text" : "jk.lpx @button scene7 @oncolor m @offcolor k @textoff scene7 @texton boom @mode b",
 									"varname" : "jkpush16[1]"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -5772,15 +5814,16 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 1459.0, 1053.0, 105.0, 89.0 ],
-									"text" : "jk.lpx @button scene6 @oncolor m @offcolor g @textoff scene6 @texton boom @mode b",
+									"text" : "jk.lpx @button scene6 @oncolor m @offcolor k @textoff scene6 @texton boom @mode b",
 									"varname" : "jkpush17[1]"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -5844,15 +5887,16 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 1459.0, 900.0, 105.0, 89.0 ],
-									"text" : "jk.lpx @button scene5 @oncolor m @offcolor g @textoff scene5 @texton boom @mode b",
+									"text" : "jk.lpx @button scene5 @oncolor m @offcolor k @textoff scene5 @texton boom @mode b",
 									"varname" : "jkpush18[1]"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -5916,15 +5960,16 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 1459.0, 744.0, 105.0, 89.0 ],
-									"text" : "jk.lpx @button scene4 @oncolor m @offcolor g @textoff scene4 @texton boom @mode b",
+									"text" : "jk.lpx @button scene4 @oncolor m @offcolor k @textoff scene4 @texton boom @mode b",
 									"varname" : "jkpush19[1]"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -5988,15 +6033,16 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 1459.0, 587.0, 105.0, 89.0 ],
-									"text" : "jk.lpx @button scene3 @oncolor m @offcolor g @textoff scene3 @texton boom @mode b",
+									"text" : "jk.lpx @button scene3 @oncolor m @offcolor k @textoff scene3 @texton boom @mode b",
 									"varname" : "jkpush20[1]"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -6060,15 +6106,16 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 1459.0, 433.0, 105.0, 89.0 ],
-									"text" : "jk.lpx @button scene2 @oncolor m @offcolor g @textoff scene2 @texton boom @mode b",
+									"text" : "jk.lpx @button scene2 @oncolor m @offcolor k @textoff scene2 @texton boom @mode b",
 									"varname" : "jkpush21[1]"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -6132,15 +6179,16 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "" ],
 									"patching_rect" : [ 1459.0, 303.0, 105.0, 89.0 ],
-									"text" : "jk.lpx @button scene1 @oncolor m @offcolor g @textoff scene1 @texton boom @mode b",
+									"text" : "jk.lpx @button scene1 @oncolor m @offcolor k @textoff scene1 @texton boom @mode b",
 									"varname" : "jkpush22[1]"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"activebgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"activebgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"activebgoncolor" : [ 1.0, 0.0, 1.0, 1.0 ],
+									"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"focusbordercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"fontsize" : 9.0,
@@ -6200,7 +6248,7 @@
 									"fontname" : "Ableton Sans Medium",
 									"fontsize" : 9.0,
 									"id" : "obj-205",
-									"items" : [ "AU DLS Synth 1", ",", "Launchpad X LPX DAW In", ",", "Launchpad X LPX MIDI In", ",", "from Max 1", ",", "from Max 2" ],
+									"items" : [ "AU DLS Synth 1", ",", "from Max 1", ",", "from Max 2" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -7468,7 +7516,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 281.0, 230.0, 50.0, 22.0 ],
-					"text" : "33"
+					"text" : "86"
 				}
 
 			}
@@ -7564,7 +7612,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 242.5, 151.0, 50.0, 22.0 ],
-					"text" : "33"
+					"text" : "86"
 				}
 
 			}
