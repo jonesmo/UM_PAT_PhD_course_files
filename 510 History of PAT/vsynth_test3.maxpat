@@ -40,6 +40,33 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"floatoutput" : 1,
+					"id" : "obj-16",
+					"maxclass" : "dial",
+					"mult" : 0.01,
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 303.0, 239.0, 40.0, 40.0 ],
+					"size" : 50.0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 207.0, 304.0, 29.5, 22.0 ],
+					"text" : "+~"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgmode" : 1,
 					"border" : 1,
 					"clickthrough" : 0,
@@ -199,7 +226,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 157.0, 198.0, 153.0, 33.0 ],
+					"patching_rect" : [ 156.0, 48.0, 153.0, 33.0 ],
 					"text" : "live audio input here? from laptop mic?"
 				}
 
@@ -267,7 +294,7 @@
 					"originaltempo" : 120.0,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 149.0, 241.0, 241.855263173580283, 87.0 ],
+					"patching_rect" : [ 148.0, 91.0, 241.855263173580283, 87.0 ],
 					"pitchcorrection" : 0,
 					"quality" : "basic",
 					"timestretch" : [ 0 ]
@@ -469,10 +496,9 @@
 						"vs_colorizer_2::c2_light_range" : -1,
 						"vs_colorizer_2::c2_sm_range" : -1,
 						"vs_lfo::lfo_freq_range" : -1,
-						"vs_hue_rot[1]::hue_m_range" : -1,
-						"vs_wfg_rad::radwfg_fm_range" : -1,
 						"vs_wfg_rad::radwfg_freq_60mult" : -1,
-						"vs_wfg_rad::radwfg_freq_range" : -1
+						"vs_wfg_rad::radwfg_freq_range" : -1,
+						"vs_wfg_rad::radwfg_fm_range" : -1
 					}
 ,
 					"saved_object_attributes" : 					{
@@ -576,6 +602,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-7", 1 ],
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-17", 0 ]
 				}
@@ -611,7 +644,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-35", 0 ],
+					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-26", 0 ]
 				}
 
@@ -662,6 +695,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-57", 1 ],
 					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
@@ -836,11 +876,11 @@
 				}
 ,
 				"obj-9::obj-25" : 				{
-					"parameter_range" : [ -1.0, 1.0 ]
+					"parameter_range" : [ -5.0, 5.0 ]
 				}
 ,
 				"obj-9::obj-26" : 				{
-					"parameter_range" : [ 0.0, 1020.0 ]
+					"parameter_range" : [ 0.0, 10000.0 ]
 				}
 ,
 				"obj-9::obj-28" : 				{
@@ -1042,7 +1082,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "vs_radial_ramp_sp2.genjit",
+				"name" : "vs_radial_saw_sp1.genjit",
 				"bootpath" : "~/Documents/Max 8/Packages/Vsynth/code",
 				"patcherrelativepath" : "../../Max 8/Packages/Vsynth/code",
 				"type" : "gJIT",
