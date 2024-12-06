@@ -1,0 +1,32 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 https://arxiv.org/pdf/2407.20445\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 - they\'92ve always had to compromise on scale to achieve controlled annotation, validation, quality control\
+	-that\'92s why they\'92ve always gone for evaluation datasets rather than training datasets\
+- limiting factor is amount of money and time for choosing and hiring annotators -- they use Prolific\
+\
+- the one-sentence descriptors were a first approach, a compromise they had to make\
+	- check out Fluca, around MusicCaps and Song Describer, and then add audio features extracted and some segmentatio notation\
+\
+- always have a step in your data pipeline that includes synthetic augmentation, esp. of text because we have good text models now\
+	- same with audio feature extractors, if you have good ones\
+	- then a human can review and validate these rather than creating them from scratch\
+\
+- re: dataset variety and metrics for it\
+	- use some audio generation metrics for audio quality and diversity\
+	- you need a reference set whose quality and variety you\'92re trying to emulate\
+	- could do statistical analysis on just the labels if you have text labels\
+	- you have to define diversity -- is it music quality? is it audio quality?\
+	- she\'92s not aware of one answer -- it\'92s complicated\
+\
+her dataset wishlist:\
+- research dataset that incorporates a huge amount of different kinds of music but also licenses\
+- she always deals with CC license datasets\
+- less cheesy music than Jamendo}
