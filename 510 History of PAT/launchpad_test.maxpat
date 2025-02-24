@@ -898,7 +898,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-64",
-					"items" : [ "to Max 1", ",", "to Max 2" ],
+					"items" : [ "Launchpad X LPX DAW Out", ",", "Launchpad X LPX MIDI Out", ",", "M4", ",", "to Max 1", ",", "to Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1001,7 +1001,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"blinkcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
@@ -1074,7 +1073,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-13",
@@ -4845,7 +4843,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -4878,7 +4875,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 317.0, 102.0, 1108.0, 791.0 ],
+										"rect" : [ 317.0, 87.0, 1108.0, 791.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -4906,7 +4903,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-52",
@@ -8309,7 +8305,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 59.0, 106.0, 1165.0, 803.0 ],
+										"rect" : [ 59.0, 87.0, 1165.0, 803.0 ],
 										"bglocked" : 1,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -20114,7 +20110,7 @@
 									"fontname" : "Ableton Sans Medium",
 									"fontsize" : 9.0,
 									"id" : "obj-1",
-									"items" : [ "to Max 1", ",", "to Max 2" ],
+									"items" : [ "Launchpad X LPX DAW Out", ",", "Launchpad X LPX MIDI Out", ",", "M4", ",", "to Max 1", ",", "to Max 2" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -21550,7 +21546,7 @@
 									"fontname" : "Ableton Sans Medium",
 									"fontsize" : 9.0,
 									"id" : "obj-205",
-									"items" : [ "AU DLS Synth 1", ",", "from Max 1", ",", "from Max 2" ],
+									"items" : [ "AU DLS Synth 1", ",", "Launchpad X LPX DAW In", ",", "Launchpad X LPX MIDI In", ",", "M4", ",", "from Max 1", ",", "from Max 2" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,

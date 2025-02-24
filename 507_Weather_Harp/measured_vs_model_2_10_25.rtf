@@ -1,0 +1,36 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue11;\red251\green0\blue255;\red34\green255\blue6;
+}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c0;\cssrgb\c100000\c7248\c100000;\cssrgb\c0\c100000\c0;
+}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 LSTM predicts:\
+temp F\
+\cf2 bar pressure inHg\cf0 \
+humidity %\
+-----\
+wind speed mph\
+\cf3 precipitation in\cf0 \
+\
+Arduino sensors send to Max:\
+temp F\
+\cf2 bar pressure hPa\cf0 \
+humidity %\
+\cf4 altitude ft\cf0 \
+wind speed mph\
+\
+wind direction (anemometer)\
+\
+\
+to do:\
+- Colab notebook currently converts millibars to inHg and trains the model on that --why?  Just keep both Arduino and pressure data for model in mb/hPa...\
+\
+to ask MG:\
+- show what I\'92m making, ask about connecting to power, connecting to oscilloscope, positioning sensor\
+- figure out what Adam was saying about exciting the string in the first place, switches, discuss with MG\
+\
+- ESP32 (wifi) vs Nano 33 BLE (built-in sensors) -- do I need separate Arduinos taking in sensor data, making prediction with model, sending via Wifi? where to start?  ESP32 seems to have both wifi capabilities and a library for using TF Lite, as of 2022.  But the Nano 33 BLE is definitely supported for current LiteRT.  However, I\'92m as yet unsure of the size of my model.  Or should I test the Hello World example on the R4 Wifi and see what happens?\
+- should I consider Arduino Cloud?}
