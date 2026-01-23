@@ -40,6 +40,65 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-109",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1307.0, 712.0, 51.0, 22.0 ],
+					"text" : "noteout"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-110",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "int" ],
+					"patching_rect" : [ 1307.0, 680.0, 35.0, 22.0 ],
+					"text" : "t i 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-112",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "bang", "int" ],
+					"patching_rect" : [ 1259.0, 648.0, 67.0, 22.0 ],
+					"text" : "uzi 127 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-113",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "bang", "int" ],
+					"patching_rect" : [ 1259.0, 608.0, 51.0, 22.0 ],
+					"text" : "uzi 16"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-114",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1259.0, 576.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Ayuthaya",
 					"id" : "obj-99",
 					"maxclass" : "comment",
@@ -898,7 +957,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-64",
-					"items" : [ "Launchpad X LPX DAW Out", ",", "Launchpad X LPX MIDI Out", ",", "M4", ",", "to Max 1", ",", "to Max 2" ],
+					"items" : [ "IAC Driver Bus 1", ",", "Launchpad X LPX DAW Out", ",", "Launchpad X LPX MIDI Out", ",", "M4", ",", "to Max 1", ",", "to Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -6089,7 +6148,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 663.0, 163.0, 50.0, 22.0 ],
-									"text" : "84"
+									"text" : "64"
 								}
 
 							}
@@ -8288,6 +8347,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-2",
@@ -8305,7 +8365,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 59.0, 87.0, 1165.0, 803.0 ],
+										"rect" : [ 508.0, 87.0, 1165.0, 803.0 ],
 										"bglocked" : 1,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -11083,8 +11143,17 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"order" : 1,
+									"source" : [ "obj-31", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-4", 0 ],
 									"midpoints" : [ 89.5, 156.0, 121.5, 156.0 ],
+									"order" : 0,
 									"source" : [ "obj-31", 0 ]
 								}
 
@@ -11498,7 +11567,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 621.5, 97.0, 57.0, 25.0 ],
-													"text" : "22"
+													"text" : "14"
 												}
 
 											}
@@ -13693,7 +13762,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 263.0, 169.0, 50.0, 22.0 ],
-									"text" : "22"
+									"text" : "14"
 								}
 
 							}
@@ -15171,7 +15240,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 233.0, 145.0, 1525.0, 828.0 ],
+						"rect" : [ 233.0, 152.0, 1525.0, 828.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -15199,6 +15268,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-42",
@@ -20110,7 +20180,7 @@
 									"fontname" : "Ableton Sans Medium",
 									"fontsize" : 9.0,
 									"id" : "obj-1",
-									"items" : [ "Launchpad X LPX DAW Out", ",", "Launchpad X LPX MIDI Out", ",", "M4", ",", "to Max 1", ",", "to Max 2" ],
+									"items" : [ "IAC Driver Bus 1", ",", "Launchpad X LPX DAW Out", ",", "Launchpad X LPX MIDI Out", ",", "M4", ",", "to Max 1", ",", "to Max 2" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -21546,7 +21616,7 @@
 									"fontname" : "Ableton Sans Medium",
 									"fontsize" : 9.0,
 									"id" : "obj-205",
-									"items" : [ "AU DLS Synth 1", ",", "Launchpad X LPX DAW In", ",", "Launchpad X LPX MIDI In", ",", "M4", ",", "from Max 1", ",", "from Max 2" ],
+									"items" : [ "AU DLS Synth 1", ",", "IAC Driver Bus 1", ",", "Launchpad X LPX DAW In", ",", "Launchpad X LPX MIDI In", ",", "M4", ",", "from Max 1", ",", "from Max 2" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -23262,7 +23332,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 186.0, 230.0, 50.0, 22.0 ],
-					"text" : "19"
+					"text" : "98"
 				}
 
 			}
@@ -23358,7 +23428,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 148.0, 151.0, 50.0, 22.0 ],
-					"text" : "19"
+					"text" : "98"
 				}
 
 			}
@@ -23734,6 +23804,49 @@
 					"destination" : [ "obj-4", 0 ],
 					"midpoints" : [ 76.5, 534.0, 279.0, 534.0, 279.0, 645.0, 426.0, 645.0, 426.0, 621.0, 448.5, 621.0 ],
 					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-109", 1 ],
+					"source" : [ "obj-110", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-109", 0 ],
+					"source" : [ "obj-110", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-110", 0 ],
+					"source" : [ "obj-112", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-109", 2 ],
+					"midpoints" : [ 1300.5, 640.0, 1348.5, 640.0 ],
+					"source" : [ "obj-113", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-112", 0 ],
+					"source" : [ "obj-113", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-113", 0 ],
+					"source" : [ "obj-114", 0 ]
 				}
 
 			}
@@ -24822,7 +24935,7 @@
 				}
 ,
 				"obj-11::obj-2::obj-29::obj-19" : 				{
-					"parameter_range" : [ 0.0, 0.0 ]
+					"parameter_range" : [ 0.0, 10.0 ]
 				}
 ,
 				"obj-11::obj-2::obj-30::obj-14" : 				{
@@ -24999,6 +25112,13 @@
 				"bootpath" : "~/Documents/Max 8/Packages/Vsynth/patchers",
 				"patcherrelativepath" : "../../Max 8/Packages/Vsynth/patchers",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vs_opmult.genjit",
+				"bootpath" : "~/Documents/Max 8/Packages/Vsynth/code",
+				"patcherrelativepath" : "../../Max 8/Packages/Vsynth/code",
+				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
